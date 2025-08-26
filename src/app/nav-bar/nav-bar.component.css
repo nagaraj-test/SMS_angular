@@ -1,0 +1,24 @@
+ 
+.my-toolbar {
+    position:fixed;
+  width: 100vw;
+  background-color: rgb(122, 7, 113);
+    display: flex;                    /* Enable flexbox */
+    justify-content: space-between;  /* Space between logo and nav */
+    align-items: center;             /* Vertically center items */
+    padding: 0 16px;                 /* Optional padding inside toolbar */
+  }
+  
+   /*.nav-items span {
+    padding-right: 1rem;             Correct unit: no space between number and unit 
+  }*/
+  
+  .logo {
+    font-weight: bold;
+  }
+    a {
+    color: rgb(206, 203, 16);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 500;
+  }

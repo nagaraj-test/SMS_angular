@@ -1,0 +1,17 @@
+<mat-toolbar class="my-toolbar">
+    <div class="logo">SMS</div> 
+    <div class="nav-items">
+        <span><a href="#home">Home</a></span>
+         <span><a href="#about">About</a></span>
+         <span><a href="#contact">Contact</a></span>
+    <span><a href="#query">Raise Query</a></span>
+      <span><a routerLink="student/dashboard" *ngIf="login">Dashboard</a></span>
+      <span><a routerLink="student/profile" *ngIf="login">Profile</a></span>
+      <span><a routerLink="student/login" *ngIf="!login">LogIn</a></span>
+      <span><a routerLink="/homePage" (click)="logout()" *ngIf="login">LogOut</a></span>
+      <span><a (click)="status()">{{ login }}</a></span>
+    </div>
+  </mat-toolbar>
+
+
+    <!-- <router-outlet></router-outlet> -->
