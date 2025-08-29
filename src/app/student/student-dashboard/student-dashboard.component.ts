@@ -10,6 +10,7 @@ export class StudentDashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("Student Dashboard Loaded");
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Console } from 'console';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,13 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   constructor() { }
-login = true;
+ 
   ngOnInit(): void {
   }
-    logout(){
-      this.login = false;
+    isLoggedIn() {
+      return !!localStorage.getItem('token');
     }
-    status(){
-      this.login = !this.login;
+
+    logout(){
+      console.log("User logged out");
+      console.log(localStorage.getItem('token'));
+      localStorage.removeItem('token');
+      console.log(localStorage.getItem('token'));
     }
 }
